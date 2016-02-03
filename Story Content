@@ -1,0 +1,58 @@
+Game script:
+
+Hello, and welcome to the game space.
+
+First, a word about the game controls.
+
+You can interact with objects in the game using the left and right mouse buttons. 
+Clicking the right mouse button at any time will bring up a menu within the game space. 
+The menu buttons will appear as objects directly in front of you. You can find them by 
+using what we'll call the "ray-probe." It might help you to imagine the ray-probe as 
+something that you can send out directly ahead of you to touch distant objects.
+In the case of the menu buttons, when the probe hits one, you will hear the function
+of the button spoken out loud. You can then activate that menu item by clicking the 
+left mouse button. A "continue" button has just appeared to your left. Please find it 
+by turning your head to the left. When you hear the sound of the menu button, click the 
+left mouse button to continue. [wait for click on "continue"]
+
+Thank you. If at any point you wish to pause or exit the game, press the right mouse button,
+find the appropriate menu button, and then activate it by clicking the left mouse button. 
+In a moment, you will be presented with three menu buttons. Please locate each of them using 
+the ray-probe, and then choose one. If you'd like to hear these instructions again, 
+choose "repeat instructions." If you are ready to begin the game, choose "enter game." 
+If you want to exit at this time, choose "exit," or remove the headphones. Here are the menu buttons:
+
+[menu: repeat instructions, enter game, exit]
+
+You have now been placed within the game space. You should try to imagine it as a flat, 
+open space -- something like an empty parking lot. Within this space are several large objects, 
+each about the size of a small house. Before the game begins, you should get to know this space. 
+You can find the objects by turning your head and body from side to side to scan the space using
+the ray-probe. If the ray hits one of the objects, it will send back a sound from that location. 
+The sound will be loud if the object is close, and quiet if the object is far away. Please take a 
+moment to scan the space to find all the objects. [instructions will pause while objects are located] 
+Now that you have found all the objects, please describe their location in space as fully as you can. 
+When you are finished with your description, click the right mouse button to bring up the menu, and 
+choose from the choices offered.
+
+[menu: repeat instructions, next, exit]
+
+Now that you have a general idea of where all the game objects are located, we can begin the game itself. 
+Once the game starts, one of the objects will begin emitting a sound. You should be able to locate the 
+object by turning your head and body to face the sound. When you think you are facing the object that is 
+emitting the sound, you can "shoot" it by clicking the left mouse button. If you hit the object, you will 
+hear a bell [play sound], and will immediately pass to the next round. A different object will start 
+emitting a sound, and you will have to find that object. If you miss, you will hear a low squawk [play sound]. 
+If that happens, you should try to adjust your position so that you are facing the object more directly. 
+If you miss again, you will lose that round, and pass to the next one. A different object will start 
+emitting a sound, and you will have to find that object. The game will continue in this way through a total 
+of twelve rounds. When all rounds have been completed you will be told to remove your headphones. 
+If you wish to stop playing at any time, please call up the menu and exit the game, or simply remove 
+the headphones. Here are the menu buttons:
+
+[menu: repeat instructions, start game, exit]
+
+[end of game]
+
+Thanks for playing. Please remove the headphones.
+
