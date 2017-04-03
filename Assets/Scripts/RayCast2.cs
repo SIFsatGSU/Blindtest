@@ -53,7 +53,7 @@ public class RayCast2 : MonoBehaviour {
             //print(hit.collider.name);
 			tone.clip = (AudioClip) Resources.Load("Jump");
             tone.Play();
-			Handheld.Vibrate();
+			//Handheld.Vibrate();
         }
 
         if (!hitOrNot && alreadyHit) { // After object is hit, and leaves 
