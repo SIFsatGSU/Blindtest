@@ -1,14 +1,14 @@
-Unity Files/VR For the Blind/[Ll]ibrary/
-Unity Files/VR For the Blind/Libirary/
-Unity Files/VR For the Blind/[Tt]emp/
-Unity Files/VR For the Blind/Tempt/
-Unity Files/VR For the Blind/[Oo]bj/
-Unity Files/VR For the Blind/Obj/
-Unity Files/VR For the Blind/[Bb]uild/
-Unity Files/VR For the Blind/Build/
-Unity Files/VR For the Blind/[Bb]uilds/
-Unity Files/VR For the Blind/Builds/
-Unity Files/VR For the Blind/Assets/AssetStoreTools*
+[Ll]ibrary/
+Libirary/
+[Tt]emp/
+Tempt/
+[Oo]bj/
+Obj/
+[Bb]uild/
+Build/
+[Bb]uilds/
+Builds/
+Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
 /.vs/
@@ -39,5 +39,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
-Unity Files/VR For the Blind/Library/metadata/fb/fb6426f323b7f024ebb25886b5182c4c
-Unity Files/VR For the Blind/Temp/
+Library/metadata/fb/fb6426f323b7f024ebb25886b5182c4c
+Temp/

@@ -44,22 +44,18 @@ public class RayCast2 : MonoBehaviour {
 			alpha = 1 - alpha;
 			print (alpha);
 
-			float pitch = (1 - alpha) * min_pitch + alpha * max_pitch;
+            /*float pitch = Mathf.Lerp(min_pitch, max_pitch, alpha);
 			tone.pitch = pitch;
-			print ("Pitch: " + pitch);
+			print ("Pitch: " + pitch);*/
 		}
 
         if (hitOrNot && !alreadyHit) { // If mouse hits object
-            //print(hit.collider.name);
-			tone.clip = (AudioClip) Resources.Load("Jump");
             tone.Play();
 			//Handheld.Vibrate();
         }
 
         if (!hitOrNot && alreadyHit) { // After object is hit, and leaves 
-            //print("Hit no more");
-			tone.clip = (AudioClip) Resources.Load("short-bong");
-			tone.Play ();
+			tone.Stop();
         }
 
         alreadyHit = hitOrNot; // Always lag behind a frame. 
