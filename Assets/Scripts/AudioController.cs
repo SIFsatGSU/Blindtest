@@ -19,7 +19,9 @@ public class AudioController : MonoBehaviour {
 		// will the sound to toggled.
 		bool currentButtonDown = OVRInput.Get (OVRInput.Button.One);
 		if (!buttonDown && currentButtonDown) {
-			ToggleSound (sonarSource);
+			PlaySonar ();
+		} else if (buttonDown && !currentButtonDown) {
+			StopSonar ();
 		}
 		buttonDown = currentButtonDown;
 	}
