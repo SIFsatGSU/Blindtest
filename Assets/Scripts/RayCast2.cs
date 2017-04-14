@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RayCast2 : MonoBehaviour {
+	public GameObject rayCastingObject;
+	public GameObject laserContainer;
     Ray ray;
     RaycastHit hit;
-	public AudioSource tone;
 
 	// distance constraints
 	public float max_distance;
@@ -27,7 +28,7 @@ public class RayCast2 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		ray = new Ray(this.transform.position, this.transform.forward);
+		ray = new Ray(rayCastingObject.transform.position, rayCastingObject.transform.forward);
 		Debug.DrawRay(ray.origin, ray.direction * 10); // Draws the ray on the "box" hands in the monitor window
 
         //Testing -- Jack's Implementation of Zane's format
@@ -36,13 +37,18 @@ public class RayCast2 : MonoBehaviour {
 		// This simply controls the pitch levels - it does not trigger any functions however.
 		if (hit.collider != null) { // if hit.collider is touching anything.
 			// Test sphere is the sphere object that 
-			testSphere.transform.position = transform.position + hit.distance * transform.forward;
+			testSphere.transform.position = rayCastingObject.transform.position + hit.distance * rayCastingObject.transform.forward;
+
+			// Resize laser.
+			float laserContainerScale = laserContainer.transform.parent.transform.lossyScale.z;
+			Vector3 laserScale = laserContainer.transform.localScale;
+			laserScale.z = hit.distance / laserContainerScale;
+			laserContainer.transform.localScale = laserScale;
 
 			//print ((hit.collider.transform.position - transform.position).magnitude);
 			float distance = Mathf.Clamp (hit.distance, min_distance, max_distance);
 			float alpha = (distance - min_distance) / (max_distance - min_distance);
 			alpha = 1 - alpha;
-			print (alpha);
 
             /*float pitch = Mathf.Lerp(min_pitch, max_pitch, alpha);
 			tone.pitch = pitch;
@@ -50,28 +56,14 @@ public class RayCast2 : MonoBehaviour {
 		}
 
         if (hitOrNot && !alreadyHit) { // If mouse hits object
-            tone.Play();
+			GetComponent<AudioController>().PlayIndicator();
 			//Handheld.Vibrate();
         }
 
         if (!hitOrNot && alreadyHit) { // After object is hit, and leaves 
-			tone.Stop();
+			GetComponent<AudioController>().StopIndicator();
         }
 
         alreadyHit = hitOrNot; // Always lag behind a frame. 
-
-
-        /* Old Cold -- Deprecated 
-        if (Physics.Raycast(ray, out hit))
-        {
-            //print(hit.collider.name);
-
-            /*if (hit.collider.gameObject.tag.Equals("ray_object"))
-            {
-                print(hit.collider.name);
-            }
-        }
-        */
-
     }
 }
